@@ -1,19 +1,33 @@
 # <img src="public/icons/icon_48.png" width="45" align="left"> My Extension
 
-My Chrome Extension
+My Chrome Extension Download Table
 
 ## Features
 
-- Feature 1
-- Feature 2
+- [x] Download Table
 
 ## Install
 
-[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+```shell
+npm install
+```
+
+## Usage
+
+```shell
+npm run watch
+```
+Then, upload the extension to your Chrome and choose folder chrome-extension-download-table/build
+
+## Public
+
+```shell
+npm run repack
+```
 
 ## Contribution
 
-Suggestions and pull requests are welcomed!.
+Suggestions and pull requests are welcomed!
 
 ---
 
