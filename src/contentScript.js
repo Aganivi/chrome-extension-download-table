@@ -2,9 +2,11 @@
 import * as XLSX from 'xlsx/xlsx.mjs';
 
 const tables = document.body.querySelectorAll('.mytable');
-
 if (tables) {
   tables.forEach((table) => {
+    const t = table.querySelector('table');
+    t.style.width = '100%';
+
     const search = table.parentNode.querySelector('.range');
     const fileTitle = getTableTitle(search);
     const download = createDownloadBtn();
