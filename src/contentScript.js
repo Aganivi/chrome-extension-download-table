@@ -48,9 +48,7 @@ function getTableTitle(el) {
 
 function downloadHTMLTableAsXLSX(table_elt, title) {
   let workbook = XLSX.utils.table_to_book(table_elt);
-  console.log(`workbook:`, workbook);
   var ws = workbook.Sheets['Sheet1'];
-  console.log(`ws:`, ws);
   XLSX.utils.sheet_add_aoa(ws, [['Created ' + new Date().toISOString()]], {
     origin: -1,
   });
