@@ -1,6 +1,7 @@
 'use strict';
 import * as XLSX from 'xlsx/xlsx.mjs';
 import axios from 'axios';
+import './styles/index.css';
 
 const tables = document.body.querySelectorAll('table');
 if (tables) {
@@ -37,19 +38,6 @@ function createDownloadBtn() {
   const download = document.createElement('div');
   download.setAttribute('id', 'download-table');
   download.setAttribute('class', 'search-btn');
-  download.style.display = 'none';
-  download.style.position = 'absolute';
-  download.style.right = '10px';
-  download.style.top = '10px';
-  download.style.justifyContent = 'center';
-  download.style.alignItems = 'center';
-  download.style.padding = '2px';
-  download.style.width = '38px';
-  download.style.height = '38px';
-  download.style.cursor = 'pointer';
-  download.style.backgroundColor = '#fff';
-  download.style.border = '1px solid #ccc';
-  download.style.borderRadius = '50%';
 
   const image = document.createElement('img');
   image.setAttribute('id', 'download-btn');

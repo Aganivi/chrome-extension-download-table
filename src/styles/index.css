@@ -1,0 +1,22 @@
+#download-table {
+  display: none;
+  position : absolute;
+  right : 10px;
+  top : 10px;
+  justify-content : center;
+  align-items : center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+#download-btn {
+  width: 26px;
+  height: 26px;
+}

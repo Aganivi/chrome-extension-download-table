@@ -10,7 +10,7 @@
     "128": "icons/icon_128.png"
   },
   "permissions": [
-    "activeTab"
+    "activeTab","tabs"
   ],
   "content_scripts": [
     {
@@ -20,7 +20,8 @@
       "run_at": "document_idle",
       "js": [
         "contentScript.js"
-      ]
+      ],
+      "css": ["styles/index.css"]
     }
   ],
   "web_accessible_resources": [
