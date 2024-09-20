@@ -22,5 +22,15 @@
         "contentScript.js"
       ]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*.png"
+      ],
+      "matches": [
+        "https://*/*"
+      ]
+    }
   ]
 }
